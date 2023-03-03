@@ -27,7 +27,6 @@ public class MessageMqDemoApplication {
 			 };
 			 channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
 		}
-		SpringApplication.run(MessageMqDemoApplication.class, args);
 	}
 
 }
